@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Vreme Do Pobede Korone</title>
+<meta name="description" content="countdown">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="css/reset.css" />
+<link rel="stylesheet" href="css/styles.css" />
+
+<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+<!-- JS -->
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="js/countdown.js"></script>
+<script>
+	
+		$(document).ready(function(){
+			$("#countdown").countdown({
+				date: "1 august 2020 00:00:00",
+				format: "on"
+			});
+		});
+	
+	</script>
+</head>
+<body>
+
+<div class="timer-area">
+  
+  <img src="images/corona.jpg">
+  <h1 class="headline">Vreme do pobede Korone</h1>
+  
+  <ul id="countdown">
+    <li>
+      <span class="days">00</span>
+      <p class="timeRefDays">dana</p>
+    </li>
+    <li>
+      <span class="hours">00</span>
+      <p class="timeRefHours">sati</p>
+    </li>
+    <li>
+      <span class="minutes">00</span>
+      <p class="timeRefMinutes">minuta</p>
+    </li>
+    <li>
+      <span class="seconds">00</span>
+      <p class="timeRefSeconds">sekundi</p>
+    </li>
+  </ul>
+  
+</div>
+
+
+</body>
+</html>
